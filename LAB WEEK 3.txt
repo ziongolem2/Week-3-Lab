@@ -1,0 +1,53 @@
+Saul Resendiz
+CIS-30A
+9/18/24
+Week 3 Lab
+
+
+
+				PROGRAMMING PROJECT 1:
+
+pos_integer = int(input())
+
+if pos_integer > 0:
+    if (pos_integer % 2 == 0 and pos_integer % 3 == 0 and pos_integer % 5 == 0) :
+        print('The number is magic!')
+    else: 
+        print('The number is not magic.')
+else: 
+    print('You can only input positive integers.')
+
+
+----------------------------------------------------------------------------------------------------
+
+				PROGRAMMING PROJECT 2:
+
+# 6 Valid colors
+valid_colors = ["red", "green", "yellow", "purple", "blue", "orange"]
+
+# 3 Complementary colors cominbations
+comp_colors1 = ["red", "green"]
+comp_colors2 = ["yellow", "purple"]
+comp_colors3 = ["blue", "orange"]
+
+# User Input
+color_name1 = input('Enter the first color: ')
+color_name2 = input('Enter the second color: ')
+
+# Boolean checker to see if both color inputs are valid colors 
+if (color_name1 in valid_colors and color_name2 in valid_colors) :
+    is_valid_color = True
+
+else: is_valid_color = False
+
+# Deciding if colors are complementary or not or if the user even input one of the 6 valid colors. 
+if (is_valid_color == True) :
+    if ((color_name1 in comp_colors1 and color_name2 in comp_colors1) or 
+        (color_name1 in comp_colors2 and color_name2 in comp_colors2) or 
+        (color_name1 in comp_colors3 and color_name2 in comp_colors3)) :
+        print ('The two colors are complementary')
+    else: print ('The two colors are not complementary')
+
+else : print('You did not enter one of red, orange, yellow, green, blue or purple')
+
+
